@@ -1,13 +1,15 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios"
+import "dotenv/config"
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({});
+    // backend url
+    const url = process.env.API_URL;
 
-    const url = "https://food-delivery-app-backend-hyvf.onrender.com";
     const [token, setToken] = useState("");
 
     const [food_list, setFoodList] = useState([]);
