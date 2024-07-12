@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
       <hr/>
       <p>Copyright 2024 &copy; Tomato.com - All Right Reserved</p>
-      <p>Powered By <a href="https://shoaibakhtar.org" target="_blank>SHOAIBAKHTAR.ORG</a></p>
+      <p>Powered By <a href="https://shoaibakhtar.org" target="_blank">SHOAIBAKHTAR.ORG</a></p>
     </div>
   )
 }
