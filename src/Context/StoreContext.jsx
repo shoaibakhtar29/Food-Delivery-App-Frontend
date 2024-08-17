@@ -5,6 +5,8 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
+    const [loading, setLoading] = useState(false);
+
     const [cartItems, setCartItems] = useState({});
     // backend url
     const url = "https://food-delivery-app-backend-rxqe.onrender.com";
@@ -54,8 +56,10 @@ const StoreContextProvider = (props) => {
     }
 
     const fetchFoodList = async () => {
+        setLoading(true);
         const response = await axios.get(url + "/api/food/list");
         setFoodList(response.data.data);
+        setLoading(false);
     }
 
     const loadCartData = async (token) => {
@@ -64,10 +68,12 @@ const StoreContextProvider = (props) => {
     }
     useEffect(() => {
         async function loadData() {
+            setLoading(true);
             await fetchFoodList();
             if (localStorage.getItem("token")) {
                 setToken(localStorage.getItem("token"));
                 await loadCartData(localStorage.getItem("token"));
+                setLoading(false);
             }
         }
         loadData();
@@ -84,7 +90,9 @@ const StoreContextProvider = (props) => {
         getTotalCartItem,
         url,
         token,
-        setToken
+        setToken,
+        loading,
+        setLoading
     }
 
     return (

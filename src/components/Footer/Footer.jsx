@@ -16,7 +16,7 @@ const Footer = () => {
             <img src={assets.linkedin_icon} alt="" />
           </div>
           <img src={assets.logo} alt="" />
-          <p>Welcome to [Your Company Name], where we bring the world's flavors to your doorstep. As passionate food enthusiasts, we curate a diverse range of cuisines, ensuring every meal is a delightful experience. With a commitment to quality and convenience, we strive to make ordering food effortless and enjoyable. Join us in exploring culinary delights from the comfort of your home!</p>
+          <p>Welcome to Tomato, where we bring the world's flavors to your doorstep. As passionate food enthusiasts, we curate a diverse range of cuisines, ensuring every meal is a delightful experience. With a commitment to quality and convenience, we strive to make ordering food effortless and enjoyable. Join us in exploring culinary delights from the comfort of your home!</p>
           <div className="footer-social-icon">
             <img src={assets.facebook_icon} alt="" />
             <img src={assets.twitter_icon} alt="" />
