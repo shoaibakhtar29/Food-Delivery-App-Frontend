@@ -9,12 +9,6 @@ const Footer = () => {
         <div className='footer-content-left'>
 
           <img src={assets.logo} alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quod quis, necessitatibus cumque eveniet mollitia dicta sed provident magnam, aliquid ea dolore maiores! Voluptatum dolores id blanditiis voluptate ad temporibus!</p>
-          <div className="footer-social-icon">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />
-            <img src={assets.linkedin_icon} alt="" />
-          </div>
           <img src={assets.logo} alt="" />
           <p>Welcome to Tomato, where we bring the world's flavors to your doorstep. As passionate food enthusiasts, we curate a diverse range of cuisines, ensuring every meal is a delightful experience. With a commitment to quality and convenience, we strive to make ordering food effortless and enjoyable. Join us in exploring culinary delights from the comfort of your home!</p>
           <div className="footer-social-icon">
